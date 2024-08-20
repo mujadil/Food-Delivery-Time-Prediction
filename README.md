@@ -18,7 +18,7 @@ Technologies Used
     Pandas: Data manipulation and analysis.
     NumPy: Numerical computing.
     Scikit-learn: For data preprocessing and model evaluation.
-    Matplotlib/Seaborn: Data visualization.
+    plotty: Data visualization.
 
 Installation
 
@@ -45,8 +45,7 @@ text
     pandas
     numpy
     scikit-learn
-    matplotlib
-    seaborn
+    plotty
     jupyter
 
 Usage
@@ -67,33 +66,8 @@ Usage
     Prediction:
     Use the trained model to predict delivery times on new or unseen data. The notebook includes examples of how to generate predictions and evaluate model performance.
 
-Dataset
 
-The dataset should include historical data on food deliveries with at least the following columns:
 
-    Order ID: Unique identifier for each order.
-    Order Time: Timestamp when the order was placed.
-    Preparation Time: Time taken by the restaurant to prepare the food.
-    Distance: Distance between the restaurant and the delivery location.
-    Weather Conditions: Weather data at the time of delivery (optional but useful for prediction).
-    Traffic Conditions: Traffic conditions at the time of delivery (optional but useful for prediction).
-    Actual Delivery Time: Actual time taken for the delivery.
-
-Ensure that the dataset is cleaned and formatted correctly before feeding it into the model.
-Model Architecture
-
-    LSTM Layers: The model is built using LSTM layers to capture the temporal dependencies in the data.
-    Dense Layers: After the LSTM layers, Dense layers are used for the final prediction.
-    Dropout: Dropout layers are included to prevent overfitting.
-    Activation Function: The ReLU activation function is used in the Dense layers, with the final layer using a linear activation function.
-
-Results
-
-The results section in the notebook will display:
-
-    The performance of the model on the test set, including metrics like MAE and RMSE.
-    Visualizations comparing predicted vs. actual delivery times.
-    A discussion on the model's accuracy and potential areas for improvement.
 
 Contributing
 
